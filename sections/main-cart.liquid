@@ -105,7 +105,7 @@
                       
                       <div class="title" data-quantity="{{ item.quantity }}" data-product-weight="{{ weight }}">
                         <a data-cc-animate-click href="{{ item.url }}">
-                          <span class="product-title">{{ item.product.title }}</span>
+                          <h6 class="product-title">{{ item.product.title }}</h6>
                           {% unless item.product.has_only_default_variant %}{{ item.variant.title }}{% endunless %}
                         </a>
                         <a href="#demo-modal_breaking {{forloop.index}}" class="material-icons {{forloop.index}}">i</a>

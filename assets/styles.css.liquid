@@ -9948,13 +9948,17 @@ html.touch .product-block.product-block--quickbuy .cc-quick-buy-btn, html.touch 
   padding-top: {{ product_form_gap_small }}px;
   padding-bottom: {{ product_form_gap_small }}px;
 }
-.product-area .product-detail__form__options--no-options {
-  padding: 5px 0;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-}
+
 .product-area .product-detail__form__options--no-options .selector-wrapper {
   font-size: 13px;
+}
+.product-area .product-detail__form__options--no-options [data-option-name="Färg"] {
+  border-top: 1px solid #ddd;
+  padding-top: 5px;
+}
+.product-area .product-detail__form__options--no-options [data-option-name="Storlek"] {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
 }
 .product-area .product-area__text-block.feature-subheader, .product-area #comments .comment .product-area__text-block.comment-date, #comments .comment .product-area .product-area__text-block.comment-date {
   margin-bottom: 0;
@@ -13354,7 +13358,8 @@ shopify-payment-terms {
 .cart-list .desc .product-title {
   font-weight: 600;
   display: block;
-  /* margin-bottom: 0.5em; */
+  font-size: 16px;
+  text-align: left;
 }
 .cart-list .item-price {
   width: 160px;
@@ -15004,6 +15009,9 @@ body {
   max-height: 70px;
   flex-direction: column;
   text-align: left;
+}
+.product-block .title h6 {
+  font-size: 16px;
 }
 .product-block .title .size {
   font-size: 14px;
